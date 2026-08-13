@@ -1,7 +1,7 @@
 class InfermionBeta < Formula
   desc "CLI and terminal UI for the Infermion AI compute platform"
   homepage "https://infermion.com"
-  version "0.1.0b3"
+  version "0.1.0b4"
   license :cannot_represent
   # License terms: https://infermion.com/legal/client-terms
   conflicts_with "infermion", because: "both install the infermion executable"
@@ -9,21 +9,21 @@ class InfermionBeta < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b3/infermion-v0.1.0b3-macos-arm64.zip"
-      sha256 "4bd570609fbc2dd1e3054d28ef743352583ddf08d21931ff603a46739f54b387"
+      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b4/infermion-v0.1.0b4-macos-arm64.zip"
+      sha256 "9cdd81e8ae48e3c8f7170385aeb3f9969adc6ef20282dd9c8d1df93af2a834c5"
     else
-      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b3/infermion-v0.1.0b3-macos-x86_64.zip"
-      sha256 "7ec68448a41976c657b67c3ab2c4d2b1900f603a9c1b2f8c555fadf3cd151b4b"
+      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b4/infermion-v0.1.0b4-macos-x86_64.zip"
+      sha256 "ee4b85fcafd246ffd39cd62f2285d80fa60cdf1f5a3e2e396b47b06d5ea30f9a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b3/infermion-v0.1.0b3-linux-arm64.tar.gz"
-      sha256 "90a57824a79cbdee1497d23f8fe82c6dccf7805153f9cc59a6c39c651ed06991"
+      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b4/infermion-v0.1.0b4-linux-arm64.tar.gz"
+      sha256 "a1b3f2ad4e4f0c8d4984b3ac96d12787b5f76fbea931cb61f10d1f191ea16476"
     else
-      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b3/infermion-v0.1.0b3-linux-x86_64.tar.gz"
-      sha256 "036e8114df7010df1afecdc47e709722a425df532f20bcd88541f5e03927fbff"
+      url "https://github.com/infermion/infermion-cli-releases/releases/download/cli-v0.1.0b4/infermion-v0.1.0b4-linux-x86_64.tar.gz"
+      sha256 "4ba69d1f80daa8ed390058eca357047a51baa7a8f724518efcd579c2af33a65a"
     end
   end
 
